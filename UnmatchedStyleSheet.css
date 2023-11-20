@@ -1,0 +1,138 @@
+body {
+	background-color: slategrey;
+	background-repeat: no-repeat;
+	height: 100%;
+	font-family: 'Noto Serif', serif;
+	font-family: 'Roboto', sans-serif;
+}
+#charChoice {
+	display:flex;
+	flex-direction: column;
+	display: none;
+}
+#logo {
+	display: block;
+	align-content: center;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	height: 100px;
+	width: 15%;
+}
+#chooser {
+	font-size: 5em;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+ .table-container img {
+	max-height: 150px;
+	max-width: 104.183px;
+	height: 135px;
+	width:105px;
+	display: flex;
+	align-items: center;
+	object-fit: contain;
+}
+#Medusa img {
+	max-height: 100px;
+}
+.randomCharacter {
+	font-size: 2rem;
+	border: 1px solid black;
+	border-radius: 5px;
+	background-color: aliceblue;
+	align-self: flex-end;
+	margin-right: 342px;
+	margin-bottom: 600px;
+	padding: 5px 15px;
+	position: absolute;
+	z-index: 1;
+	cursor: pointer;
+}
+.appContainer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-end;
+	gap: 1rem;
+	text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+	color:white;
+	display: ;
+
+}
+.table-container {
+	height: 600px;
+	width: 1200px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr;
+	gap: .2rem;
+	border: 1px solid black;
+	border-spacing: collapse;
+	background-color: dimgray;
+	box-shadow: 5px 5px 15px 5px black;
+	margin-top: 25px;
+	z-index: 2;
+
+	
+}
+.table-cell {
+	border: 1px solid black;
+	border-collapse: collapse;
+	padding: 0px;
+	margin: 0;
+}
+.stats, .strategy, .cards {
+	display: flex;
+	flex-direction: column;
+}
+
+.theMeat {
+	border: 1px solid black;
+	overflow: auto;
+	max-height: 60vh;
+}
+.charPage{
+	display: flex;
+	flex-direction: column;
+}
+.tabs {
+	display: flex;
+	align-self: flex-end;
+}
+.tabsButton {
+  color: aliceblue;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+.charPage h2{
+	display: flex;
+	align-self: center;
+	font-size: 5em;
+}
+body .hidden {
+	display: none;
+}
+
+li{
+	font-size: 1.3rem;
+}
+.heading {
+	font-size: 1.6rem;
+}
+
+.card{
+	max-height: 15rem;
+	max-width: 12rem;
+	padding-left: 15px;
+
+}

@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Unmatched Character Selector</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Roboto:wght@500&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="UnmatchedStyleSheet.css">
+</head>
+<body>
+	<input type="image" src="logo.webp" id="logo">
+
+	<div class="appContainer"> 
+		<h1 id="chooser">Choose Your Character</h1>
+		<button class="randomCharacter">?</button>
+		<div class="table-container"> 
+			<div class="table-cell" id="alice">
+				<img src="UnmatchedCards/Alice/Card Back.PNG" alt="Alice">
+			</div>
+			<div class="table-cell">
+				Bigfoot
+			</div>
+			<div class="table-cell">
+				Achilles
+			</div>
+			<div class="table-cell">
+				Sherlock Holmes
+			</div>
+			<div class="table-cell">
+				Houdini
+			</div>
+			<div class="table-cell">
+				Luke Cage
+			</div>
+			<div class="table-cell">
+				Elektra
+			</div>
+			<div class="table-cell">
+				Cloak & Dagger
+			</div>
+			<div class="table-cell">
+				Spider-man
+			</div>
+			<div class="table-cell">
+				T-rex
+			</div>
+			<div class="table-cell">
+				Buffy
+			</div>
+			<div class="table-cell" id="sinbad">
+				<img src="UnmatchedCards/Sinbad/Card Back.PNG" alt="Sinbad">
+			</div>
+			<div class="table-cell">
+				Robin Hood
+			</div>
+			<div class="table-cell">
+				Bloody Mary
+			</div>
+			<div class="table-cell">
+				Dracula
+			</div>
+			<div class="table-cell">
+				Genie
+			</div>
+			<div class="table-cell">
+				Moon Knight
+			</div>
+			<div class="table-cell">
+				Bullseye
+			</div>
+			<div class="table-cell">
+				Black Widow
+			</div>
+			<div class="table-cell">
+				Doctor Strange
+			</div>
+			<div class="table-cell">
+				Raptors
+			</div>
+			<div class="table-cell">
+				Willow
+			</div>
+			<div class="table-cell" id="medusa">
+				<img src="UnmatchedCards/Medusa/Card Back.PNG" alt="Medusa">
+			</div>
+			<div class="table-cell">
+				Beowulf
+			</div>
+			<div class="table-cell">
+				Sun Wukong
+			</div>
+			<div class="table-cell">
+				Dr. Jekyll & Mr. Hyde
+			</div><div class="table-cell">
+				Oda Nobunaga
+			</div>
+			<div class="table-cell">
+				Ghost Rider
+			</div>
+			<div class="table-cell">
+				Squirrel Girl
+			</div>
+			<div class="table-cell">
+				Black Panther
+			</div>
+			<div class="table-cell">
+				She-Hulk
+			</div>
+			<div class="table-cell">
+				Robert Muldoon
+			</div>
+			<div class="table-cell">
+				Angel
+			</div>
+			<div class="table-cell" id="arthur">
+				<img src="UnmatchedCards/King Arthur/CardBack.PNG" alt="King Arthur">
+			</div>
+			<div class="table-cell">
+				Little Red Riding Hood
+			</div>
+			<div class="table-cell">
+				Yenenga
+			</div>
+			<div class="table-cell">
+				Invisible Man
+			</div>
+			<div class="table-cell">
+				Tomoe Gozen
+			</div>
+			<div class="table-cell">
+				Daredevil
+			</div>
+			<div class="table-cell">
+				Ms. Marvel
+			</div>
+			<div class="table-cell">
+				Winter Soldier
+			</div>
+			<div class="table-cell">
+				Bruce Lee
+			</div>
+			<div class="table-cell">
+				Dr. Sattler
+			</div>
+			<div class="table-cell">
+				Spike
+			</div>
+		</div> 
+		
+
+
+
+	</div>
+
+<div id="charChoice">
+	<div id="aliceStats" class="charPage hidden">
+		<h2> Alice </h2>
+		<nav class="tabs">
+				<button class="tabsButton coreButton"></button>
+				<button class="tabsButton stratButton"></button>
+				<button class="tabsButton cardsButton"></button>
+		</nav>
+		<div class="theMeat">
+	 		<div class="stats hidden" id="aliceMain">
+	 			<h3 class="heading"> Stats </h3>
+	 			<ul>
+	 				<li>Origin: Alice in Wonderland</li>
+	 				<li> Box: Battle of legends: Volume One</li>
+	 				<li> Type: Melee</li>
+	 				<li> Move: 2</li>
+	 				<li> HP: 13</li>
+	 				<li> Passive: Curiouser and curiouser;
+						When you place Alice, choose whether she starts the game BIG or SMALL.
+						When Alice is BIG, add 2 to the value of her attack cards.
+						When Alice is SMALL, add 1 to the value of her defense cards.</li>
+	 				<li> Sidekick: Jabberwock</li>
+	 				<li> Sidekick Hp: 8</li>
+	 			</ul>
+			</div>
+			<div class="strategy hidden" id="aliceStrats">
+				<h3 class="heading"> Strategy </h3>
+				<ul>
+					<li>
+						<h3>Strengths:</h3>
+						<ul>
+							<li>Big / Small Bonuses</li>
+							<li> Movement Effects</li>
+							<li> Big attacks</li>
+							<li> Healing</li>
+							<li> Great Sidekick</li>
+						</ul>  
+					</li>
+					<li>
+						<h3> Weaknesses:</h3>
+						<ul>
+							<li> Squishy Sidekick</li>
+							<li> Move 2/ Melee</li>
+							<li> Form Changes</li>
+						</ul>
+					</li>	
+					<li>
+						<h3>Good Matchups:</h3>
+						<ul>
+							<li> T. Rex </li>
+							<li> Robin Hood</li>
+							<li> Sinbad</li>
+						</ul>  
+					</li>
+					<li>
+						<h3>Bad Matchups:</h3>
+						<ul>
+							<li> Dracula</li>
+							<li> Ghost Rider</li>
+							<li> Ingen</li>
+							<li> Sun Wukong</li>
+						</ul>  
+					</li>
+				</ul>
+			</div>
+			<div class="cards hidden" id="aliceCards">
+				<img src="UnmatchedCards/Alice/Passive.png" class="card">
+				<img src="UnmatchedCards/Alice/Regroup.png" class="card">
+				<img src="UnmatchedCards/Alice/Feint.png" class="card">
+				<img src="UnmatchedCards/Alice/MomentousS.png" class="card">
+				<img src="UnmatchedCards/Alice/Skirmish.png" class="card">
+				<img src="UnmatchedCards/Alice/Snicker-Snack.png" class="card">
+				<img src="UnmatchedCards/Alice/The Other SOTM.png" class="card">
+				<img src="UnmatchedCards/Alice/O Frabjous Day.png" class="card">
+				<img src="UnmatchedCards/Alice/Looking Glass.png" class="card">
+				<img src="UnmatchedCards/Alice/Manxome Foe.png" class="card">
+				<img src="UnmatchedCards/Alice/MadAAH.png" class="card">
+				<img src="UnmatchedCards/Alice/Im Late.png" class="card">
+				<img src="UnmatchedCards/Alice/Drink Me.png" class="card">
+				<img src="UnmatchedCards/Alice/Eat Me.png" class="card">
+				<img src="UnmatchedCards/Alice/Jaws That Bite.png" class="card">
+				<img src="UnmatchedCards/Alice/Claws That Catch.png" class="card">
+
+			</div>
+		</div>
+	</div>
+	<div id="sinbadStats" class="charPage hidden">
+		<h2> Sinbad </h2>
+		<nav class="tabs">
+				<button class="tabsButton coreButton" ></button>
+				<button class="tabsButton stratButton"></button>
+				<button class="tabsButton cardsButton"></button>
+		</nav>
+		<div class="theMeat">
+	 		<div class="stats hidden" id="sinbadMain">
+	 			<h3 class="heading"> Stats </h3>
+	 			<ul>
+	 				<li> One Thousand and One Nights</li>
+	 				<li> Box: Battle of legends: Volume One</li>
+	 				<li> Type: Melee</li>
+	 				<li> Move: 2</li>
+	 				<li> HP: 15</li>
+	 				<li> Passive: 7 Voyages; When you maneuver, you may move your fighters +1 space for each VOYAGE card in your discard pile.</li>
+	 				<li> Sidekick: The Porter</li>
+	 				<li> Sidekick Hp: 6</li>
+	 			</ul>
+			</div>
+			<div class="strategy hidden" id="sinbadStrats">
+				<h3 class="heading"> Strategy </h3>
+				<ul>
+					<li>
+						<h3>Strengths:</h3>
+						<ul>
+							<li>Card Draw</li>
+							<li>Movement</li>
+							<li> Damage Output</li>
+						</ul>  
+					</li>
+					<li>
+						<h3> Weaknesses:</h3>
+						<ul>
+							<li> Cancels</li>
+							<li> Has to Approach</li>
+							<li> Has to Attack</li>
+						</ul>
+					</li>	
+					<li>
+						<h3>Good Matchups:</h3>
+						<ul>
+							<li> Yennenga </li>
+							<li> Little Red</li>
+							<li> Beowulf</li>
+						</ul>  
+					</li>
+					<li>
+						<h3>Bad Matchups:</h3>
+						<ul>
+							<li> Bigfoot</li>
+							<li> Achilles</li>
+							<li> Dracula</li>
+							<li> Sun Wukong</li>
+						</ul>  
+					</li>
+				</ul>
+			</div>
+			<div class="cards hidden" id="sinbadCards">
+				<img src="UnmatchedCards/Sinbad/Passive.png" class="card">
+				<img src="UnmatchedCards/Sinbad/Regroup.png" class="card">
+				<img src="UnmatchedCards/Sinbad/Feint.png" class="card">
+				<img src="UnmatchedCards/Sinbad/MomentousS.png" class="card">
+				<img src="UnmatchedCards/Sinbad/Exploit.png" class="card">
+				<img src="UnmatchedCards/Sinbad/Toil An Danger.png" class="card">
+				<img src="UnmatchedCards/Sinbad/Leap Away.png" class="card">
+				<img src="UnmatchedCards/Sinbad/Commanding Impact.png" class="card">
+				<img src="UnmatchedCards/Sinbad/Voyage Cannibals Madness.png" class="card">
+				<img src="UnmatchedCards/Sinbad/voyage CIty Serendib.png" class="card">
+				<img src="UnmatchedCards/Sinbad/Voyage Eyes Like Fire.png" class="card">
+				<img src="UnmatchedCards/Sinbad/Voyage GIant Snakes.png" class="card">
+				<img src="UnmatchedCards/Sinbad/Voyage Home.png" class="card">
+				<img src="UnmatchedCards/Sinbad/Voyage Island Whale.png" class="card">
+				<img src="UnmatchedCards/Sinbad/Voyage Man-Eating Apes.png" class="card">
+				<img src="UnmatchedCards/Sinbad/Riches Beyond Compare.png" class="card">
+				<img src="UnmatchedCards/Sinbad/By Fortune And Fate.png" class="card">
+
+
+			</div>
+		</div>
+	</div>
+	<div id="medusaStats" class="charPage hidden">
+		<h2> Medusa </h2>
+		<nav class="tabs">
+				<button class="tabsButton coreButton"></button>
+				<button class="tabsButton stratButton"></button>
+				<button class="tabsButton cardsButton"></button>
+		</nav>
+		<div class="theMeat">
+	 		<div class="stats hidden" id="medusaMain">
+	 			<h3 class="heading"> Stats </h3>
+	 			<ul>
+	 				<li> Greek Mythology</li>
+	 				<li> Box: Battle of legends: Volume One</li>
+	 				<li> Type: Ranged</li>
+	 				<li> Move: 3</li>
+	 				<li> HP: 16</li>
+	 				<li> Passive: Gaze of Stone; At the start of your turn, you may deal 1 damage to an opposing fighter in Medusa's zone.</li>
+	 				<li> Sidekick: Harpies</li>
+	 				<li> Sidekick Hp: 1 (3 total)</li>
+	 			</ul>
+			</div>
+			<div class="strategy hidden" id="medusaStrats">
+				<h3 class="heading"> Strategy </h3>
+				<ul>
+					<li>
+						<h3>Strengths:</h3>
+						<ul>
+							<li>Discards</li>
+							<li>Move 3 + Ranged</li>
+							<li> Gaze Mindgames</li>
+							<li> High HP</li>
+							<li> Damage Output</li>
+							<li> Strong Sidekicks</li>
+						</ul>  
+					</li>
+					<li>
+						<h3> Weaknesses:</h3>
+						<ul>
+							<li> Value Blocking</li>
+							<li> Attack Polarity</li>
+						</ul>
+					</li>	
+					<li>
+						<h3>Good Matchups:</h3>
+						<ul>
+							<li> Squirrel Girl </li>
+							<li> Little Red</li>
+							<li> Bloody Mary</li>
+							<li> Bigfoot</li>
+						</ul>  
+					</li>
+					<li>
+						<h3>Bad Matchups:</h3>
+						<ul>
+							<li> Sherlock</li>
+							<li> Yennenga</li>
+							<li> Ghost Rider</li>
+							<li> Daredevil</li>
+						</ul>  
+					</li>
+				</ul>
+			</div>
+			<div class="cards hidden" id="medusaCards">
+				<img src="UnmatchedCards/Medusa/Passive.png" class="card">
+				<img src="UnmatchedCards/Medusa/Regroup.png" class="card">
+				<img src="UnmatchedCards/Medusa/Feint.png" class="card">
+				<img src="UnmatchedCards/Medusa/Dash.png" class="card">
+				<img src="UnmatchedCards/Medusa/Snipe.png" class="card">
+				<img src="UnmatchedCards/Medusa/Hiss and Slither.png" class="card">
+				<img src="UnmatchedCards/Medusa/Second Shot.png" class="card">
+				<img src="UnmatchedCards/Medusa/Gaze Of Stone.png" class="card">
+				<img src="UnmatchedCards/Medusa/A Momentary Glance.png" class="card">
+				<img src="UnmatchedCards/Medusa/Winged Frenzy.png" class="card">
+				<img src="UnmatchedCards/Medusa/Clutching Claws.png" class="card">
+				<img src="UnmatchedCards/Medusa/The Hounds of Mighty Zeus.png" class="card">
+			</div>
+		</div>
+	</div>
+	<div id="arthurStats" class="charPage hidden">
+		<h2> King Arthur </h2>
+		<nav class="tabs">
+				<button class="tabsButton coreButton"></button>
+				<button class="tabsButton stratButton"></button>
+				<button class="tabsButton cardsButton"></button>
+		</nav>
+		<div class="theMeat">
+	 		<div class="stats hidden" id="arthurMain">
+	 			<h3 class="heading"> Stats </h3>
+	 			<ul>
+	 				<li> History/Legend</li>
+	 				<li> Box: Battle of legends: Volume One</li>
+	 				<li> Type: Melee</li>
+	 				<li> Move: 2</li>
+	 				<li> HP: 18</li>
+	 				<li> Passive: When King Arthur attacks, you may BOOST that attack. Play the BOOST card, face down, along with your attack card. If your opponent cancels the effects on your attack card, the BOOST is discarded without effect.</li>
+	 				<li> Sidekick: Merlin</li>
+	 				<li> Sidekick Hp: 7</li>
+	 			</ul>
+			</div>
+			<div class="strategy hidden" id="arthurStrats">
+				<h3 class="heading"> Strategy </h3>
+				<ul>
+					<li>
+						<h3>Strengths:</h3>
+						<ul>
+							<li>Strong Sidekick</li>
+							<li>High HP</li>
+						</ul>  
+					</li>
+					<li>
+						<h3> Weaknesses:</h3>
+						<ul>
+							<li> Cancelable Ability</li>
+							<li> Telegraphed Boosting</li>
+							<li> Excalibur</li>
+							<li> Unique Cards</li>
+						</ul>
+					</li>	
+					<li>
+						<h3>Good Matchups:</h3>
+						<ul>
+							<li> Invisible Man </li>
+							<li> Jekyll & Hyde</li>
+						</ul>  
+					</li>
+					<li>
+						<h3>Bad Matchups:</h3>
+						<ul>
+							<li> Sherlock</li>
+							<li> Medusa</li>
+							<li> Bigfoot</li>
+						</ul>  
+					</li>
+				</ul>
+			</div>
+			<div class="cards hidden" id="arthurCards">
+				<img src="UnmatchedCards/King Arthur/Passive.png" class="card">
+				<img src="UnmatchedCards/King Arthur/Regroup.png" class="card">
+				<img src="UnmatchedCards/King Arthur/Feint.png" class="card">
+				<img src="UnmatchedCards/King Arthur/MomentousS.png" class="card">
+				<img src="UnmatchedCards/King Arthur/Skirmish.png" class="card">
+				<img src="UnmatchedCards/King Arthur/Swift Strike.png" class="card">
+				<img src="UnmatchedCards/King Arthur/Divine Intervention.png" class="card">
+				<img src="UnmatchedCards/King Arthur/The Holy Grail.png" class="card">
+				<img src="UnmatchedCards/King Arthur/The Aid of Morgana.png" class="card">
+				<img src="UnmatchedCards/King Arthur/Noble Sacrifice.png" class="card">
+				<img src="UnmatchedCards/King Arthur/Excalibur.png" class="card">
+				<img src="UnmatchedCards/King Arthur/The Lady OTL.png" class="card">
+				<img src="UnmatchedCards/King Arthur/Bewilderment.png" class="card">
+				<img src="UnmatchedCards/King Arthur/AidTCO.png" class="card">
+				<img src="UnmatchedCards/King Arthur/Command The Storms.png" class="card">
+				<img src="UnmatchedCards/King Arthur/Prophecy.png" class="card">
+				<img src="UnmatchedCards/King Arthur/Restless Spirits.png" class="card">
+			</div>
+		</div>
+		</div>
+</div>
+
+
+
+
+<script type="text/javascript" src="UnmatchedJS.js"></script>
+</body>
+</html>
